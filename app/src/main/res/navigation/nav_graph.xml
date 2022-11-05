@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListFragment">
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="de.othregensburg.wichtlwicht.ListFragment"
+        android:label="@string/list_fragment_label"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_ListFragment_to_ParticipantFragment"
+            app:destination="@id/ParticipantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ParticipantFragment"
+        android:name="de.othregensburg.wichtlwicht.ParticipantFragment"
+        android:label="@string/participant_fragment_label"
+        tools:layout="@layout/fragment_participant">
+        <action
+            android:id="@+id/action_ParticipantFragment_to_WichtlFragment"
+            app:destination="@id/WichtlFragment" />
+        <action
+            android:id="@+id/action_ParticipantFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WichtlFragment"
+        android:name="de.othregensburg.wichtlwicht.WichtlFragment"
+        android:label="@string/wichtl_fragment_label"
+        tools:layout="@layout/fragment_wichtl">
+        <action
+            android:id="@+id/action_WichtlFragment_to_ParticipantFragment"
+            app:destination="@id/ParticipantFragment" />
+        <action
+            android:id="@+id/action_WichtlFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/TasksFragment"
+        android:name="de.othregensburg.wichtlwicht.TasksFragment"
+        android:label="@string/tasks_fragment_label"
+        tools:layout="@layout/fragment_task">
+
+        <action
+            android:id="@+id/action_TasksFragment_to_ParticipantTaskFragment"
+            app:destination="@id/ParticipantTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ParticipantTaskFragment"
+        android:name="de.othregensburg.wichtlwicht.ParticipantTaskFragment"
+        android:label="@string/participant_task_fragment_label"
+        tools:layout="@layout/fragment_participanttask">
+
+        <action
+            android:id="@+id/action_ParticipantTaskFragment_to_TasksFragment"
+            app:destination="@id/TasksFragment" />
+        <action
+            android:id="@+id/action_ParticipantTaskFragment_to_WichtlTaskFragment"
+            app:destination="@id/WichtlTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WichtlTaskFragment"
+        android:name="de.othregensburg.wichtlwicht.WichtlTaskFragment"
+        android:label="@string/wichtl_task_fragment_label"
+        tools:layout="@layout/fragment_wichtltask">
+
+        <action
+            android:id="@+id/action_WichtlTaskFragment_to_TasksFragment"
+            app:destination="@id/TasksFragment" />
+        <action
+            android:id="@+id/action_WichtlTaskFragment_to_ParticipantTaskFragment"
+            app:destination="@id/ParticipantTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="de.othregensburg.wichtlwicht.ResultFragment"
+        android:label="@string/result_fragment_label"
+        tools:layout="@layout/fragment_result">
+
+        <action
+            android:id="@+id/action_ResultFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+
+</navigation>

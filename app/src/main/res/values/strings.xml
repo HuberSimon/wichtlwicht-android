@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">wichtlwicht</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="list_fragment_label">List Fragment</string>
+    <string name="wichtl_fragment_label">Wichtl Fragment</string>
+    <string name="participant_fragment_label">Participant Fragment</string>
+    <string name="tasks_fragment_label">Tasks Fragment</string>
+    <string name="wichtl_task_fragment_label">WichtlTask Fragment</string>
+    <string name="participant_task_fragment_label">ParticipantTask Fragment</string>
+    <string name="result_fragment_label">Result Fragment</string>
+    <string name="wichtl">Du bist ein wichtl für</string>
+    <string name="next">Nächster Teilnehmer</string>
+
+
+
+    <string name="nextWichtlStat">Gebt das Handy zu</string>
+    <string name="startNextwichtl">Los gehts!</string>
+
+    <string name="personStat">Teilnehmer</string>
+    <string name="taskStat">Aufgaben</string>
+
+    <string name="hello_list_fragment">Alle Teilnehmer eingeben!!!</string>
+    <string name="participants">Eingabe Teilnehmer</string>
+    <string name="start">start</string>
+    <string name="deleteAll">neu \nbeginnen</string>
+    <string name="deleteLast">letzten Eintrag \nlöschen</string>
+    <string name="deleteLastPart">letzten Teilnehmer \nlöschen</string>
+    <string name="deleteLastTask">letzte Aufgabe \nlöschen</string>
+
+
+    <string name="hallostat">Drücke den Button \nund du erfährst wer \ndein Wichtlpartner ist!</string>
+    <string name="hallo">Hallo</string>
+    <string name="abort">Abbrechen</string>
+    <string name="tasks">Modus Aufgaben verteilen</string>
+    <string name="normal">Modus Wichteln</string>
+    <string name="resultMenu">Ergebnisse</string>
+
+    <string name="halloTaskstat">Drücke den Button \nund du erfährst welche \nAufgabe du hast!</string>
+    <string name="wichtlTask">Deine Aufgabe ist</string>
+
+    <string name="tasksinp">Eingabe Aufgabe</string>
+
+    <string name="resultText">Ergebnis</string>
+    <string name="resultWichtln">Ergebnisse Wichteln</string>
+    <string name="resultAufgaben">Ergebnisse Aufgabenzuweisung</string>
+    <string name="deleteAlldelete">alles löschen</string>
+
+</resources>
